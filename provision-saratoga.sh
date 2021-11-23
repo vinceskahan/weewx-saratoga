@@ -4,7 +4,7 @@
 #-----------------------------------------------------------------------
 
 # install the prerequisites for saratoga
-apt-get install -y php php-fpm curl php-curl php-xml php-gd python3-ephem
+apt-get install -y php php-fpm curl php-curl php-xml php-gd python3-ephem unzip
 
 # get the pieces
 wget https://saratoga-weather.org/wxtemplates/Base-USA.zip
