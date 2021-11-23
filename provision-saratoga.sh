@@ -43,13 +43,14 @@ cp sites-enabled.default /etc/nginx/sites-enabled/default
 cd /var/www/html
 cp wxindex.php index.php
 
-# clean up static client*.txt files
+# clean up static demo files
 cd /var/www/html
-rm client*.txt
+rm client*.txt WEEWXtags.php
 ln -s weewx/clientraw.txt      clientraw.txt
 ln -s weewx/clientrawdaily.txt clientrawdaily.txt
 ln -s weewx/clientrawextra.txt clientrawextra.txt
 ln -s weewx/clientrawhour.txt  clientrawhour.txt
+ln -s weewx/WEEWXtags.php WEEWXtags.php
 
 # get the weewx-extension
 wee_extension --install /tmp/weewx-saratoga.tgz
